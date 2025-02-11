@@ -105,7 +105,7 @@ class wordContainer:
         return exampleString
 
 def getText():
-    Book = open('books.txt', 'r')
+    Book = open('books.txt', 'r', encoding="utf8")
 
     words = Book.read(10000000)
     Chapters = re.split('CHAPTER [IVXLCDM]*', words)
